@@ -42,7 +42,7 @@ public class ObjectPool<T>
 Your object pool requires an object factory function to create objects. An example object factory function might look like this:
 
 
-```
+```cs
 MyClass CreateObject()
 {
     // Create a new object and return it
@@ -53,7 +53,7 @@ MyClass CreateObject()
 ## Step 3: Use the Object Pool
 You can use your object pool as follows:
 
-```
+```cs
 // Specify the object factory and initial size
 ObjectPool<MyClass> objectPool = new ObjectPool<MyClass>(CreateObject, initialSize: 10);
 
