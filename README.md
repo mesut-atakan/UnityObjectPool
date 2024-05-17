@@ -5,7 +5,7 @@ Object pool is a design pattern that allows for the efficient reuse of objects i
 
 ## Step 1: Create the Object Pool Class
 First, you need to create a class that will represent your object pool. You can create an example class like this:
-```
+```cs
 public class ObjectPool<T>
 {
     private List<T> objects = new List<T>();
